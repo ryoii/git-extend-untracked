@@ -21,7 +21,7 @@ jobs:
         id: tag
         run: |
           tag=$(echo ${{ github.ref }} | cut -dv -f2)
-          echo "::set-output name=tag::$tag"
+          echo "tag=$tag" >> $GITHUB_OUTPUT
 
       - name: Grant Execute Permission for gradlew
         run: chmod +x gradlew
