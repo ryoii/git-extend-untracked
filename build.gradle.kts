@@ -4,7 +4,6 @@ plugins {
 }
 
 group = "cn.ryoii"
-version = "0.1.0"
 
 repositories {
     mavenCentral()

@@ -17,6 +17,11 @@
     Add a feature for git4idea plugin to mark a file or directory as untracked.
   ]]></description>
 
+    <change-notes><![CDATA[
+    0.1.1
+    + Fix icon in dark theme
+  ]]></change-notes>
+
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>

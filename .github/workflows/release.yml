@@ -1,0 +1,32 @@
+name: Release and Upload Plugin
+
+on:
+  push:
+    tags: [ 'v*' ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: adopt-openj9
+          java-version: 11
+
+      - name: Get Tag
+        id: tag
+        run: |
+          tag=$(echo ${{ github.ref }} | cut -dv -f2)
+          echo "::set-output name=tag::$tag"
+
+      - name: Grant Execute Permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Publish
+        run: ./gradlew build publishPlugin -Pversion=${{ steps.tag.outputs.tag }}
+        env:
+          PUBLISH_TOKEN: ${{ secrets.INTELLIJ_PUBLISH_TOKEN }}
