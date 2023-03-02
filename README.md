@@ -1,4 +1,5 @@
 [![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/20579-git-extend-untracked)](https://plugins.jetbrains.com/plugin/20579-git-extend-untracked)
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/d/20579-git-extend-untracked)](https://plugins.jetbrains.com/plugin/20579-git-extend-untracked)
 ![license](https://img.shields.io/github/license/ryoii/git-extend-untracked.svg)
 
 # Git Extend Untracked
