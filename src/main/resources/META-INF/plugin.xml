@@ -20,6 +20,8 @@
     <change-notes><![CDATA[
     0.1.1
     + Fix icon in dark theme
+    0.1.2
+    + Support new IDEA version
   ]]></change-notes>
 
     <!-- Product and plugin compatibility requirements.
