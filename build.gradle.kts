@@ -15,6 +15,9 @@ intellij {
     version.set("2022.1.4")
     type.set("IC") // Target IDE Platform
 
+    updateSinceUntilBuild.set(true)
+    sameSinceUntilBuild.set(false)
+
     plugins.set(listOf("git4idea"))
 }
 
